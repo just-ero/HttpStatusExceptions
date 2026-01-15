@@ -1,8 +1,8 @@
 # HttpStatusExceptions
 
-[![NuGet](https://img.shields.io/nuget/v/HttpStatusExceptions.svg)](https://nuget.org/packages/HttpStatusExceptions)
-[![NuGet](https://img.shields.io/nuget/v/HttpStatusExceptions.AspNetCore.svg)](https://nuget.org/packages/HttpStatusExceptions.AspNetCore)
-[![License](https://img.shields.io/github/license/just-ero/HttpStatusExceptions.svg)](LICENSE.md)
+[![HttpStatusExceptions](https://img.shields.io/nuget/v/HttpStatusExceptions.svg?label=HttpStatusExceptions)](https://nuget.org/packages/HttpStatusExceptions)
+[![HttpStatusExceptions.AspNetCore](https://img.shields.io/nuget/v/HttpStatusExceptions.AspNetCore.svg?label=HttpStatusExceptions.AspNetCore)](https://nuget.org/packages/HttpStatusExceptions.AspNetCore)
+[![License](https://img.shields.io/github/license/just-ero/HttpStatusExceptions)](LICENSE.md)
 
 A lightweight library for throwing HTTP status code exceptions using clean, expressive static helper methods.
 
