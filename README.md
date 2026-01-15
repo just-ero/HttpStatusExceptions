@@ -54,8 +54,22 @@ using HttpStatusExceptions.AspNetCore;
 // In Program.cs
 builder.Services.AddProblemDetails(options =>
 {
-    options.Map<HttpStatusException>((ctx, ex) => ex.ToProblemDetails());
+    options.CustomizeProblemDetails = (ctx) =>
+    {
+        ctx.ProblemDetails = MapProblemDetails(ctx.Exception);
+    };
 });
+
+ProblemDetails MapProblemDetails(Exception ex)
+    => ex switch
+    {
+        HttpStatusException ex => ex.ToProblemDetails(),
+        _ => new ProblemDetails
+        {
+            Detail = "An unexpected error occurred.",
+            Status = StatusCodes.Status500InternalServerError,
+        }
+    };
 ```
 
 ## Supported Status Codes
