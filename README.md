@@ -60,10 +60,10 @@ builder.Services.AddProblemDetails(options =>
     };
 });
 
-ProblemDetails MapProblemDetails(Exception ex)
+static ProblemDetails MapProblemDetails(Exception? ex)
     => ex switch
     {
-        HttpStatusException ex => ex.ToProblemDetails(),
+        HttpStatusException httpEx => httpEx.ToProblemDetails(),
         _ => new ProblemDetails
         {
             Detail = "An unexpected error occurred.",
