@@ -1,0 +1,8 @@
+<Solution>
+
+  <Folder Name="/src/">
+    <Project Path="src/HttpStatusExceptions/HttpStatusExceptions.csproj" />
+    <Project Path="src/HttpStatusExceptions.AspNetCore/HttpStatusExceptions.AspNetCore.csproj" />
+  </Folder>
+
+</Solution>

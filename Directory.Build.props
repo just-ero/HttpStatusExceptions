@@ -1,0 +1,23 @@
+<Project>
+
+  <!-- Common Paths -->
+  <PropertyGroup>
+    <RootPath>$(MSBuildThisFileDirectory)</RootPath>
+
+    <SrcPath>$(RootPath)/src</SrcPath>
+
+    <ArtifactsPath>$(RootPath)/artifacts</ArtifactsPath>
+  </PropertyGroup>
+
+  <!-- Common Properties -->
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Nullable>enable</Nullable>
+
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+</Project>

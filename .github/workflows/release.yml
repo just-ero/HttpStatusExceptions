@@ -1,0 +1,64 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_httpstatusexceptions:
+        description: 'Release HttpStatusExceptions'
+        type: boolean
+        default: true
+      release_httpstatusexceptions_aspnetcore:
+        description: 'Release HttpStatusExceptions.AspNetCore'
+        type: boolean
+        default: true
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    permissions:
+      contents: write
+      id-token: write
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build -c Release --no-restore
+
+      - name: Pack HttpStatusExceptions
+        if: ${{ github.event_name == 'push' || inputs.release_httpstatusexceptions }}
+        run: dotnet pack src/HttpStatusExceptions/HttpStatusExceptions.csproj -c Release --no-build -o nupkgs
+
+      - name: Pack HttpStatusExceptions.AspNetCore
+        if: ${{ github.event_name == 'push' || inputs.release_httpstatusexceptions_aspnetcore }}
+        run: dotnet pack src/HttpStatusExceptions.AspNetCore/HttpStatusExceptions.AspNetCore.csproj -c Release --no-build -o nupkgs
+
+      - name: NuGet login
+        uses: NuGet/login@v1
+        id: login
+        with:
+          user: just-ero
+
+      - name: Push to NuGet
+        run: dotnet nuget push "nupkgs/*.nupkg" --source "https://api.nuget.org/v3/index.json" --api-key ${{ steps.login.outputs.NUGET_API_KEY }} --skip-duplicate
+
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: ncipollo/release-action@v1
+        with:
+          generateReleaseNotes: true
+          makeLatest: true

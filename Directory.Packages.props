@@ -1,0 +1,12 @@
+<Project>
+
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageVersion Include="MinVer" Version="7.0.0" />
+    <PackageVersion Include="PolySharp" Version="1.15.0" />
+  </ItemGroup>
+
+</Project>

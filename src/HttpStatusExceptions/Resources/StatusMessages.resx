@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="0" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Status400BadRequest" xml:space="preserve">
+    <value>Request could not be understood by the server</value>
+  </data>
+  <data name="Status401Unauthorized" xml:space="preserve">
+    <value>Requested resource requires authentication</value>
+  </data>
+  <data name="Status402PaymentRequired" xml:space="preserve">
+    <value>Payment is required to access the requested resource</value>
+  </data>
+  <data name="Status403Forbidden" xml:space="preserve">
+    <value>Server refuses to fulfill the request</value>
+  </data>
+  <data name="Status404NotFound" xml:space="preserve">
+    <value>The requested resource does not exist on the server</value>
+  </data>
+  <data name="Status405MethodNotAllowed" xml:space="preserve">
+    <value>Method is not allowed on the requested resource</value>
+  </data>
+  <data name="Status405ConnectNotAllowed" xml:space="preserve">
+    <value>CONNECT is not allowed on the requested resource</value>
+  </data>
+  <data name="Status405DeleteNotAllowed" xml:space="preserve">
+    <value>DELETE is not allowed on the requested resource</value>
+  </data>
+  <data name="Status405GetNotAllowed" xml:space="preserve">
+    <value>GET is not allowed on the requested resource</value>
+  </data>
+  <data name="Status405HeadNotAllowed" xml:space="preserve">
+    <value>HEAD is not allowed on the requested resource</value>
+  </data>
+  <data name="Status405OptionsNotAllowed" xml:space="preserve">
+    <value>OPTIONS is not allowed on the requested resource</value>
+  </data>
+  <data name="Status405PatchNotAllowed" xml:space="preserve">
+    <value>PATCH is not allowed on the requested resource</value>
+  </data>
+  <data name="Status405PostNotAllowed" xml:space="preserve">
+    <value>POST is not allowed on the requested resource</value>
+  </data>
+  <data name="Status405PutNotAllowed" xml:space="preserve">
+    <value>PUT is not allowed on the requested resource</value>
+  </data>
+  <data name="Status405TraceNotAllowed" xml:space="preserve">
+    <value>TRACE is not allowed on the requested resource</value>
+  </data>
+  <data name="Status406NotAcceptable" xml:space="preserve">
+    <value>Client has indicated that it will not accept any of the available representations of the resource</value>
+  </data>
+  <data name="Status407ProxyAuthenticationRequired" xml:space="preserve">
+    <value>Requested proxy requires authentication</value>
+  </data>
+  <data name="Status408RequestTimeout" xml:space="preserve">
+    <value>Client did not send a request within the time the server was expecting it</value>
+  </data>
+  <data name="Status409Conflict" xml:space="preserve">
+    <value>Request could not be completed due to a conflict with the current state of the resource</value>
+  </data>
+  <data name="Status410Gone" xml:space="preserve">
+    <value>The requested resource is no longer available and has been permanently removed</value>
+  </data>
+  <data name="Status411LengthRequired" xml:space="preserve">
+    <value>Required Content-Length header is missing</value>
+  </data>
+  <data name="Status412PreconditionFailed" xml:space="preserve">
+    <value>A condition set for this request failed</value>
+  </data>
+  <data name="Status413PayloadTooLarge" xml:space="preserve">
+    <value>Request is too large for the server to process</value>
+  </data>
+  <data name="Status414RequestUriTooLong" xml:space="preserve">
+    <value>Request URI is too long</value>
+  </data>
+  <data name="Status415UnsupportedMediaType" xml:space="preserve">
+    <value>Request contains an unsupported media type</value>
+  </data>
+  <data name="Status416RangeNotSatisfiable" xml:space="preserve">
+    <value>Range of data requested from the resource cannot be returned</value>
+  </data>
+  <data name="Status417ExpectationFailed" xml:space="preserve">
+    <value>Expectation given in an Expect header could not be met by the server</value>
+  </data>
+  <data name="Status421MisdirectedRequest" xml:space="preserve">
+    <value>Request was directed at the server that is not able to produce a response</value>
+  </data>
+  <data name="Status422UnprocessableEntity" xml:space="preserve">
+    <value>Request was well-formed but was unable to be followed due to semantic errors</value>
+  </data>
+  <data name="Status423Locked" xml:space="preserve">
+    <value>Source or destination resource is locked</value>
+  </data>
+  <data name="Status424FailedDependency" xml:space="preserve">
+    <value>Method couldn't be performed on the resource because a dependency on another action failed</value>
+  </data>
+  <data name="Status426UpgradeRequired" xml:space="preserve">
+    <value>Client should upgrade to a different protocol</value>
+  </data>
+  <data name="Status428PreconditionRequired" xml:space="preserve">
+    <value>Server requires the request to be conditional</value>
+  </data>
+  <data name="Status429TooManyRequests" xml:space="preserve">
+    <value>Client sent too many requests in a given amount of time</value>
+  </data>
+  <data name="Status431RequestHeaderFieldsTooLarge" xml:space="preserve">
+    <value>Server is unwilling to process the request because its header fields are too large</value>
+  </data>
+  <data name="Status451UnavailableForLegalReasons" xml:space="preserve">
+    <value>Server is denying access to the resource as a consequence of a legal demand</value>
+  </data>
+  <data name="Status500InternalServerError" xml:space="preserve">
+    <value>Undefined error has occurred on the server</value>
+  </data>
+  <data name="Status501NotImplemented" xml:space="preserve">
+    <value>Server does not support the requested function</value>
+  </data>
+  <data name="Status502BadGateway" xml:space="preserve">
+    <value>Server received an invalid response from the upstream server</value>
+  </data>
+  <data name="Status503ServiceUnavailable" xml:space="preserve">
+    <value>Server is temporarily unavailable</value>
+  </data>
+  <data name="Status504GatewayTimeout" xml:space="preserve">
+    <value>Intermediate proxy timed out while waiting for a response from another proxy or the origin server</value>
+  </data>
+  <data name="Status505HttpVersionNotSupported" xml:space="preserve">
+    <value>Requested HTTP version is not supported by the server</value>
+  </data>
+  <data name="Status506VariantAlsoNegotiates" xml:space="preserve">
+    <value>Chosen variant resource isn't a proper endpoint in the negotiation process</value>
+  </data>
+  <data name="Status507InsufficientStorage" xml:space="preserve">
+    <value>Server is unable to store the representation needed to complete the request</value>
+  </data>
+  <data name="Status508LoopDetected" xml:space="preserve">
+    <value>Server detected an infinite loop while processing the request</value>
+  </data>
+  <data name="Status510NotExtended" xml:space="preserve">
+    <value>Further extensions to the request are required for the server to fulfill it</value>
+  </data>
+  <data name="Status511NetworkAuthenticationRequired" xml:space="preserve">
+    <value>Client needs to authenticate to gain network access</value>
+  </data>
+</root>

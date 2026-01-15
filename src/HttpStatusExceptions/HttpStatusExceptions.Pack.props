@@ -1,0 +1,32 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <Authors>just-ero</Authors>
+    <PackageId>HttpStatusExceptions</PackageId>
+    <Description>
+      A lightweight library for throwing HTTP status code exceptions using clean, expressive static helper methods.
+    </Description>
+
+    <RepositoryUrl>https://github.com/just-ero/HttpStatusExceptions</RepositoryUrl>
+    <PackageTags>exceptions;throw-helpers;http;status-codes</PackageTags>
+
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="$(RootPath)/README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+  <!-- MinVer -->
+  <ItemGroup>
+    <PackageReference Include="MinVer" PrivateAssets="all" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <MinVerAutoIncrement>minor</MinVerAutoIncrement>
+    <MinVerDefaultPreReleaseIdentifiers>preview.0</MinVerDefaultPreReleaseIdentifiers>
+    <MinVerTagPrefix>v</MinVerTagPrefix>
+  </PropertyGroup>
+
+</Project>
